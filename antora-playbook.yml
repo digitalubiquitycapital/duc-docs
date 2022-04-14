@@ -1,14 +1,16 @@
 site:
   title: Antora Docs
-  start_page: component-b::index.adoc 
+#  start_page: design::index.adoc
 content:
-  sources: 
+  sources:
   - url: https://gitlab.com/antora/demo/demo-component-a.git
     branches: master
-  - url: https://bitbucket.org/digitalubiquity/core-specs.git
+  - url: https://github.com/digitalubiquitycapital/design-phase-specs.git
     branches: [master]
     start_path: docs
-ui: 
+ui:
   bundle:
     url: /home/inocult/projects/duc-docs/docs-ui-default/build/ui-bundle.zip
     snapshot: true
+runtime:
+  fetch: true
