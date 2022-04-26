@@ -1,12 +1,10 @@
 site:
   title: Antora Docs
-#  start_page: design::index.adoc
+  start_page: design::index.adoc
 content:
   sources:
-  - url: https://gitlab.com/antora/demo/demo-component-a.git
-    branches: master
   - url: https://github.com/digitalubiquitycapital/design-phase-specs.git
-    branches: [master]
+    branches: [main]
     start_path: docs
 ui:
   bundle:
