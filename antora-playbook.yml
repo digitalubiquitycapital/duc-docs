@@ -1,14 +1,19 @@
 site:
-  title: Antora Docs
-  start_page: design::index.adoc
+  title: Digital Ubiquity - Specifications
+  start_page: osp::index.adoc
 content:
   sources:
-  - url: https://github.com/digitalubiquitycapital/design-phase-specs.git
+  - url: https://github.com/digitalubiquitycapital/general-specs.git
+    branches: [main]
+  - url: https://github.com/digitalubiquitycapital/osp-specs.git
     branches: [main]
     start_path: docs
+output:
+  dir: public
+  clean: true
 ui:
   bundle:
-    url: /home/inocult/projects/duc-docs/docs-ui-default/build/ui-bundle.zip
+    url: ./docs-ui-default/build/ui-bundle.zip
     snapshot: true
 runtime:
   fetch: true
